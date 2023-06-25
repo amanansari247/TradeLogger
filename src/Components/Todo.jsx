@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+
 import './tradelogger.css';
 
 const TradeLogger = () => {
@@ -11,7 +11,7 @@ const TradeLogger = () => {
   const [showTradeDetails, setShowTradeDetails] = useState(false);
   const [selectedTrade, setSelectedTrade] = useState(null);
 
-  const navigate = useNavigate();
+  
 
   useEffect(() => {
     const storedTradeList = JSON.parse(localStorage.getItem('tradeList'));
